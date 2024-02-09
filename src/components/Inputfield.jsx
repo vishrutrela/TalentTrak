@@ -1,0 +1,15 @@
+import React from 'react'
+
+const Inputfield = ({ changehandler, value, title, name }) => {
+    return (
+        <label className='sidebar-label-container'>
+            <input type="radio" 
+            name={name} 
+            value={value} 
+            onChange={changehandler} />
+            <span className='checkmark'></span>{title}
+        </label>
+    )
+}
+
+export default Inputfield

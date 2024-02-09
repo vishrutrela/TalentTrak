@@ -1,19 +1,19 @@
 import React from 'react';
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import './Navbar.css'
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex items-center justify-between">
-      <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                  <NavLink to="/">
-                    <p className="text-lg font-semibold text-white cursor-pointer">JobFinder</p>
-                  </NavLink>
-                </div>
+      <div className="container mx-auto flex items-center justify-between w-11/12">
+        <div className="flex flex-shrink-0 items-center">
+
+          <NavLink to="/">
+            <div className='content'>
+              <h2>TalentTrak</h2>
+              <h2>TalentTrak</h2>
+            </div>
+          </NavLink>
+        </div>
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-4">
