@@ -1,6 +1,6 @@
 import React from 'react'
-
-const employement = () => {
+import Inputfield from '../components/Inputfield'
+const Employment = ({changehandler}) => {
   return (
     <div>
             <h4 className='text-large font-medium mb-2'>Type of employement</h4>
@@ -19,4 +19,4 @@ const employement = () => {
   )
 }
 
-export default employement
+export default Employment

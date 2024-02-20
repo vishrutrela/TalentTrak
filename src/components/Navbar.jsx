@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import './Navbar.css'
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-white p-4">
       <div className="container mx-auto flex items-center justify-between w-11/12">
         <div className="flex flex-shrink-0 items-center">
 
@@ -16,20 +16,20 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-4">
-          <a href="#" className="text-white px-10 hover:text-gray-300">Home</a>
-          <a href="#" className="text-white px-10 hover:text-gray-300">About</a>
-          <a href="#" className="text-white px-10 hover:text-gray-300">Contact</a>
+        <div className="hidden md:flex space-x-12">
+          <NavLink to="/post-job"> Post job</NavLink>
+          <NavLink to="/salary">Salary Estimate</NavLink>
+          <NavLink to="/my-job">My job</NavLink>
         </div>
 
         {/* Auth Buttons */}
         <div className="flex items-center space-x-4">
-          <button className="bg-blue text-white px-4 py-2 rounded hover:bg-blue focus:outline-none focus:ring focus:border-blue">
+          <NavLink to="/login" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-500 focus:outline-none focus:ring focus:border-blue">
             Login
-          </button>
-          <button className="bg-blue text-white px-4 py-2 rounded hover:bg-blue focus:outline-none focus:ring focus:border-blue">
+          </NavLink>
+          <NavLink  to="/signup" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-500 focus:outline-none focus:ring focus:border-blue">
             Sign Up
-          </button>
+          </NavLink>
         </div>
       </div>
     </nav>
