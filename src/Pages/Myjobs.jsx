@@ -11,7 +11,7 @@ const Myjobs = () => {
 
     // console.log(SearchText)
      function fetchData (){
-        fetch('http://localhost:2001/my-jobs/vishrutrela@gmail.com').then((res) => res.json()).then((data) => setJobs(data))
+        fetch('https://talenttoko.onrender.com/my-jobs/vishrutrela@gmail.com').then((res) => res.json()).then((data) => setJobs(data))
 
      }
 

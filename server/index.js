@@ -7,13 +7,15 @@ require('dotenv').config()
 
 
 const { ObjectId } = require('mongodb')
-const { SignupCreate } = require('./controller/UserController')
+const { SignupCreate } = require('./controller/userController')
 
 
 
 // middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "*",
+}));
 
 
 

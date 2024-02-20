@@ -24,7 +24,7 @@ const Home = () => {
 
   async function fetchData() {
     setLoading(true);
-    await fetch("http://localhost:2001/all-jobs").then(res => res.json()).then(data => {
+    await fetch("https://talenttoko.onrender.com/all-jobs").then(res => res.json()).then(data => {
       setJobs(data);
 
       setLoading(false);
