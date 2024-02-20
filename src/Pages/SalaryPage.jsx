@@ -39,7 +39,7 @@ const SalaryPage = () => {
                     id='search'
                     onChange={(event) => setSearchText(event.target.value)}
                     className='py-2 pl-3 border focus:outline-none lg:w-6/12 mb-4 w-full' />
-                <button className='bg-blue text-white font-semibold px-8 py-2 rounded sm mb-4' onClick={handleSearch}>Search</button>
+                <button className='bg-blue-500 text-white font-semibold px-8 py-2 rounded sm mb-4' onClick={handleSearch}>Search</button>
 
 
 
@@ -52,7 +52,7 @@ const SalaryPage = () => {
                         return (
                             <div key='data.id' className='shadow py-8 px-3'>
                                 <h4 className='font-semibold text-xl'>{data.title}</h4>
-                                <p className='font-medium text-blue'>{data.salary}</p>
+                                <p className='font-medium text-blue-500'>{data.salary}</p>
                                 <div className='flex flex-wrap gap-4'>
                                     <NavLink className=" text-black underline">{data.status}</NavLink>
                                     <NavLink className=" text-black underline">{data.skills}</NavLink>

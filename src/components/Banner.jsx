@@ -23,7 +23,7 @@ const Banner = ({ query, changeinputhandler }) => {
           </div>
           <div className='flex md:rounded-s-none rounded shadow-sm ring-1 ring-inset ring-gray-300
               -within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 md:w-1/3 w-full'>
-            <input type="text" name="title" id="title" placeholder='Location'
+            <input type="text" name="title" id="title" placeholder='Location' onChange={changeinputhandler}
               className='block flex-1 border- bg-transparent py-1.5 pl-8 text-gray-900
                 placeholder: text-gray-400 focus:right-0 sm:text-sm sm:leading-6'      
               

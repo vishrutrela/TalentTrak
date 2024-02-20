@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Jobs from './Jobs'
 import { NavLink } from 'react-router-dom'
+import { useUser } from "@clerk/clerk-react"
+
 const Myjobs = () => {
     const [searchText, setSearchText] = useState("")
     const [isloading, setIsloading] = useState(false)
@@ -9,9 +11,11 @@ const Myjobs = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsperpage = 4;
 
+    const { isSignedIn, user } = useUser();
+
     // console.log(SearchText)
      function fetchData (){
-        fetch('https://talenttrak.onrender.com/my-jobs/vishrutrela@gmail.com').then((res) => res.json()).then((data) => setJobs(data))
+        fetch(`https://talenttrak.onrender.com/my-jobs/${user.emailAddresses}`).then((res) => res.json()).then((data) => setJobs(data))
 
      }
 

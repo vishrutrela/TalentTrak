@@ -4,10 +4,13 @@ import Home from "../Pages/Home";
 import CreateJob from "../Pages/CreateJob";
 import Myjobs from "../Pages/Myjobs";
 import JobDetails from "../Pages/JobDetails"
-import LoginPage from "../Pages/LoginPage";
 import SalaryPage from "../Pages/SalaryPage"
-import SignupPage from "../Pages/SignupPage"
-  const router = createBrowserRouter([
+import SigninPage from "../Pages/SigninPage";
+import SignupPage from "../Pages/SignUpPage";
+import ContactPage from "../Pages/ContactPage";
+import DashboardPage from "../Pages/DashboardPage";
+
+const router = createBrowserRouter([
     {
       path: "/",
       element: <App/>,
@@ -20,12 +23,20 @@ import SignupPage from "../Pages/SignupPage"
       ]
     },
     {
-      path:"/login",
-      element:<LoginPage/>
+      path:"/sign-in",
+      element:<SigninPage/>
     },
     {
-      path:"/signup",
+      path:"/sign-up",
       element:<SignupPage/>
+    },
+    {
+      path:"/dashboard",
+      element:<DashboardPage/>
+    },
+    {
+      path:"/contact",
+      element:<ContactPage/>
     }
     
     
