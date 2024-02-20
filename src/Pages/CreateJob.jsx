@@ -17,7 +17,7 @@ const CreateJob = () => {
 
         data.skillsArray = selectoption;
 
-        fetch("https://talenttoko.onrender.com/post-job", {
+        fetch("https://talenttrak.onrender.com/post-job", {
             method: "POST",
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(data)
