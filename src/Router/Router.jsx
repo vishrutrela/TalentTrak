@@ -6,9 +6,8 @@ import Myjobs from "../Pages/Myjobs";
 import JobDetails from "../Pages/JobDetails"
 import SalaryPage from "../Pages/SalaryPage"
 import SigninPage from "../Pages/SigninPage";
-import SignupPage from "../Pages/SignUpPage";
-import ContactPage from "../Pages/ContactPage";
-import DashboardPage from "../Pages/DashboardPage";
+import SignUpPage from "../Pages/SignUpPage";
+
 
 const router = createBrowserRouter([
     {
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
     },
     {
       path:"/sign-up",
-      element:<SignupPage/>
+      element:<SignUpPage/>
     },
     
     
